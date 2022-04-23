@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunflower School Student Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sunflower School</h1>
+        <h2>Student Registration From</h2>
+        <div class="form-wrapper">
+            <form action="">
+                <div class="form-item">
+                    <label for="fullname">Student Image:</label>
+                    <input type="file" name="studentimage" id="studentimage" required>
+                    <p>(Passport picture form and less than 5 Mb)</p>
+                </div>
+                <div class="form-item">
+                    <label for="fullname">Student Name:</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+                </div>
+                <div class="form-item">
+                    <label for="username">Father's Name:</label>
+                    <input type="text" name="username" id="fathersname" placeholder="Father's Full Name" required>
+                </div>
+                <div class="form-item">
+                    <label for="username">Mother's Name:</label>
+                    <input type="text" name="username" id="mothersname" placeholder="Mother's Full Name" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="gender">Gender:</label>
+                    <div class="genders">
+                        <p>Male</p> <input type="radio" name="gender" id="gender" value="male" required>
+                        <p>Female</p> <input type="radio" name="gender" id="gender" value="female">
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="email">Date of Birth</label>
+                    <input type="date" name="DOB" id="DOB" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">E-mail (parent):</label>
+                    <input type="email" name="email" id="email" placeholder="sfs@gmail.com" required>
+                </div>
+                <div class="form-item">
+                    <label for="level">Class:</label>
+                    <select name="level" id="level">
+                        <option value="class">1</option>
+                        <option value="class">2</option>
+                        <option value="class">3</option>
+                        <option value="class">4</option>
+                        <option value="class">5</option>
+                        <option value="class">6</option>
+                        <option value="class">JHS 1</option>
+                        <option value="class">JHS 2</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="phonenumber">Parent's Tel/Mobile:</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="XXX XXX XXXX" required>
+                </div>
+                <hr>
+                <h3>Residential Address</h3>
+                <div class="form-item">
+                    <label for="pstate">City:</label>
+                    <input type="text" name="pstate" id="pstate" placeholder="Accra" required>
+                </div>
+                <div class="form-item">
+                    <label for="pcity">Town:</label>
+                    <input type="text" name="pcity" id="pcity" placeholder="Achimota" required>
+                </div>
+                <div class="form-item">
+                    <label for="pzip">GhanaPost:</label>
+                    <input type="number" name="pzip" id="pzip" placeholder="GP-XXX-XXXX" required>
+                </div>
+
+                <button class="register" type="submit">Register</button>
+                                  <h4>Thank You for Choosing Sunflower</h4>
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
